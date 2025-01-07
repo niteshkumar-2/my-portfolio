@@ -1,22 +1,45 @@
 <!-- Hero Section (Home Page) -->
-<section class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white h-screen flex flex-col justify-center items-center">
-    <!-- Background Image (faded for effect) -->
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/hero-bg.jpg'); opacity: 0.3;"></div>
-  
-    <div class="z-10 text-center px-6">
-      <!-- Name and Profession Title -->
-      <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 leading-tight tracking-wide">Nitesh Kumar</h1>
-      <p class="text-xl sm:text-2xl mb-6 max-w-2xl mx-auto">Creating Scalable Web Applications with Angular | Passionate about Building User-Centric Digital Experiences</p>
-  
-      <!-- Call to Action (CTA) Buttons -->
-      <div class="flex justify-center gap-6">
-        <a routerLink="/projects" class="inline-block bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white py-3 px-8 rounded-lg text-lg shadow-lg transform hover:scale-105 transition-all">
-          View Projects
-        </a>
-        <a href="assets/Ritesh_Kumar_Resume.pdf" download class="inline-block border-2 border-white hover:bg-white hover:text-gray-800 text-white py-3 px-8 rounded-lg text-lg shadow-lg transform hover:scale-105 transition-all">
-          Download Resume
-        </a>
-      </div>
+<section
+  class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white h-screen flex flex-col justify-center items-center overflow-hidden"
+>
+  <!-- Background Image with Overlay -->
+  <div
+    class="absolute inset-0 bg-cover bg-center"
+    style="background-image: url('assets/hero-bg.jpg')"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="z-10 text-center px-6">
+    <!-- Name and Title -->
+    <h1
+      class="text-4xl md:text-6xl font-extrabold leading-tight tracking-wide mb-4"
+    >
+      Nitesh Kumar
+    </h1>
+    <p class="text-lg md:text-2xl font-medium max-w-3xl mx-auto mb-6">
+      Building Scalable Web Applications with <strong>Angular</strong> |
+      Passionate About Crafting Seamless, User-Centric Experiences
+    </p>
+
+    <!-- Call-to-Action Buttons -->
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- View Projects -->
+      <a
+        routerLink="/projects"
+        class="inline-block bg-gradient-to-r from-green-500 to-teal-500 text-white py-3 px-8 rounded-lg text-lg font-semibold shadow-md transform hover:scale-110 hover:shadow-xl hover:from-green-600 hover:to-teal-600 transition duration-300"
+      >
+        View Projects
+      </a>
+      <!-- Download Resume -->
+      <a
+        href="assets/Nitesh_Kumar_Resume.pdf"
+        download
+        class="inline-block border-2 border-white text-white py-3 px-8 rounded-lg text-lg font-semibold shadow-md transform hover:scale-110 hover:bg-white hover:text-gray-800 transition duration-300"
+      >
+        Download Resume
+      </a>
     </div>
-  </section>
-  
+  </div>
+</section>
